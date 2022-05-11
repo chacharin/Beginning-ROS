@@ -5,7 +5,7 @@
 2. ติดตั้ง Ubuntu https://ubuntu.com/download/desktop/thank-you?version=22.04&architecture=amd64
 
 3. ติดตั้ง ROS Melodic
-  เปิด Terminal แล้วพิมพ์ทัละบรรทัด http://wiki.ros.org/melodic/Installation/Ubuntu
+  เปิด Terminal แล้วพิมพ์ทัละบรรทัด http://wiki.ros.org/noetic/Installation/Ubuntu
     (หาก EROR """bash: /opt/ros/noetic/setup.bash: No such file or directory"""  
       ให้ใช้คำสั่ง gedit $HOME/.bashrc แล้วลบ """/opt/ros/noetic/setup.bash""" ท้ายไฟล์)
  
