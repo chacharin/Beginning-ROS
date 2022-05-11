@@ -12,11 +12,11 @@
 4. ติดตั้ง Enviroment
     $ mkdir catkin_ws
     $ cd catkin_ws/
-    4.3 $ mkdir src
-    4.4 $ catkin_make
-    4.5 $ source ~/catkin_ws/devel/setup.bash
-    4.6 $ gedit ~/.bashrc
-    4.7 เติม sourceใหม่  ใน  bashrc แล้ว save
+    $ mkdir src
+    $ catkin_make
+    $ source ~/catkin_ws/devel/setup.bash
+    $ gedit ~/.bashrc
+    เติม sourceใหม่  ใน  bashrc แล้ว save
   
 5. สร้างไฟล์ python ใน ROS
 
