@@ -22,7 +22,25 @@
     $ cd catkin_ws/src
     $ catkin_create_pkg my_project rospy turtlesim
     $ sudo snap install code --classic
+    $ catkin_make
+    
+7. สร้าง Node ด้วย python ใน ROS
+    $ cd catkin_ws/src/my_project
+    $ mkdir scripts
+    $ cd scripts
+    $ touch one.py
+    $ chmod +x one.py
+    $ cd --
+    $ cd catkin_ws/src
     $ code .
-7. สร้างไฟล์ python ใน ROS
+    จากนั้นเขียนโค้ดใน VS code
+    
+8. ทดสอบเรียกใช้ไฟล์ Node ที่สร้างขึ้น ให้เปิด 3 terinal 
+    terminal 1. สั่ง $ rosrun ด้วย new terminal 
+    terminal2.  สั่ง $ rosrun my_project one.py
+    terminal3.  สั่ง $ rosnode list (  และทดสอบ $ rosnode kill /node_one)
+    #ใช้ $ rqt_graph ดู Model Node Link
+    
+    
 
    
