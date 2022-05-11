@@ -5,9 +5,9 @@
 2. ติดตั้ง Ubuntu https://releases.ubuntu.com/20.04.4/ubuntu-20.04.4-desktop-amd64.iso
 
 3. ติดตั้ง ROS
-  เปิด Terminal แล้วพิมพ์ทัละบรรทัด http://wiki.ros.org/noetic/Installation/Ubuntu
-    (หาก EROR """bash: /opt/ros/noetic/setup.bash: No such file or directory"""  
-      ให้ใช้คำสั่ง gedit $HOME/.bashrc แล้วลบ """/opt/ros/noetic/setup.bash""" ท้ายไฟล์)
+  เปิด Terminal แล้วพิมพ์ทีละบรรทัด http://wiki.ros.org/noetic/Installation/Ubuntu
+    (หาก EROR <bash: /opt/ros/noetic/setup.bash: No such file or directory> 
+      ให้ใช้คำสั่ง gedit $HOME/.bashrc แล้วลบ /opt/ros/noetic/setup.bash ท้ายไฟล์)
  
 4. ติดตั้ง Enviroment
   home:$ mkdir catkin_ws
