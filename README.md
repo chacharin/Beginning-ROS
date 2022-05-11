@@ -10,13 +10,14 @@
       ให้ใช้คำสั่ง gedit $HOME/.bashrc แล้วลบ """/opt/ros/noetic/setup.bash""" ท้ายไฟล์)
  
 4. ติดตั้ง Enviroment
-  เปิด Terminal แล้วพิมพ์ทัละบรรทัด http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
-   (sudo apt-get install python-rosinstall ก่อน)
-
-คำสั่งใช้ประจำ
-  1. source devel/setup.bash
-  2. chmod +x <file.py>
-  3. rosrun <folder> <file.py> เช่น rosrun beginner_tutorials talker.py หรือ rosrun beginner_tutorials talker.py
-  4. 
+  home:$ mkdir catkin_ws
+  home:$ cd catkin_ws/
+  home:~/catkin_ws $ mkdir src
+  home:~/catkin_ws $ catkin_make
+  home:$ source ~/catkin_ws/devel/setup.bash
+  home:$ gedit ~/.bashrc
+  เติม sourceใหม่  ใน  bashrc แล้ว save
+  
+5. สร้างไฟล์ python ใน ROS
 
    
