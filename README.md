@@ -10,13 +10,13 @@
       ให้ใช้คำสั่ง gedit $HOME/.bashrc แล้วลบ /opt/ros/noetic/setup.bash ท้ายไฟล์)
  
 4. ติดตั้ง Enviroment
-  home:$ mkdir catkin_ws
-  home:$ cd catkin_ws/
-  home:~/catkin_ws $ mkdir src
-  home:~/catkin_ws $ catkin_make
-  home:$ source ~/catkin_ws/devel/setup.bash
-  home:$ gedit ~/.bashrc
-  เติม sourceใหม่  ใน  bashrc แล้ว save
+  1.home:$ mkdir catkin_ws
+  2.home:$ cd catkin_ws/
+  3.home:~/catkin_ws $ mkdir src
+  4.home:~/catkin_ws $ catkin_make
+  5.home:$ source ~/catkin_ws/devel/setup.bash
+  6.home:$ gedit ~/.bashrc
+  7.เติม sourceใหม่  ใน  bashrc แล้ว save
   
 5. สร้างไฟล์ python ใน ROS
 
