@@ -18,6 +18,11 @@
     $ gedit ~/.bashrc
     เติม sourceใหม่  ใน  bashrc แล้ว save
   
-5. สร้างไฟล์ python ใน ROS
+5. สร้าง Packgage เก็บ Code ของตัวเอง
+    $ cd catkin_ws/src
+    $ catkin_create_pkg my_project rospy turtlesim
+    $ sudo snap install code --classic
+    $ code .
+7. สร้างไฟล์ python ใน ROS
 
    
