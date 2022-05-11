@@ -11,4 +11,12 @@
  
 4. ติดตั้ง Enviroment
   เปิด Terminal แล้วพิมพ์ทัละบรรทัด http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
-    
+   (sudo apt-get install python-rosinstall ก่อน)
+
+คำสั่งใช้ประจำ
+  1. source devel/setup.bash
+  2. chmod +x <file.py>
+  3. rosrun <folder> <file.py> เช่น rosrun beginner_tutorials talker.py หรือ rosrun beginner_tutorials talker.py
+  4. 
+
+   
