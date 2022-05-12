@@ -22,7 +22,7 @@
     $ cd catkin_ws/src
     $ catkin_create_pkg my_project rospy turtlesim
     $ sudo snap install code --classic
-    $ catkin_make
+    $ catkin_make (การ make  ต้องทำใน path catkin_ws หลัก )
     
 7. สร้าง Node ด้วย python ใน ROS
     $ cd catkin_ws/src/my_project
@@ -63,8 +63,37 @@
                    $ rosmsg show turtle1/pose (จะพบชุดตัวแปรข้อมูล)
                    $ rostopic echo /turtle1/pose
     
+11. ทดลองสร้างโค้ด Pubish คำสั่ง ไปที่ turtlesim ให้เปิด 4 terminal
+    terminal 1. สั่ง $ roscore 
+    terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
+    terminal 3. สั่ง $ rostopic list
+                   $ rostopic info /cmd_vel
+                   $ rosmsg show geometry_msgs/Twist (จะพบชุดตัวแปรข้อมูล)
+    terminal 4. สั่ง $ cd catkin_ws/src/my_project/scripts
+                   $ touch draw_circle.py
+                   $ chmod +x draw_circle.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   (ต้องเปิดไฟล์ packgage.xml แล้วเติม geometry_msgs ใน depend tag 3 อัน)
+                   $ rosrun my_project draw_circle.py
+    
+ 12. ทดลองสร้างโค้ด Subcribe ข้อมูลจาก turtlesim ให้เปิด 5 terminal
+    terminal 1. สั่ง $ roscore 
+    terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
+    terminal 3. สั่ง $ rostopic list
+                   $ rostopic info /turtle1/pose
+                   $ rostopic echo /turtle1/pose
+    terminal 4. สั่ง $ cd catkin_ws/src/my_project/scripts
+                   $ touch pose_subscriber.py
+                   $ chmod +x pose_subscriber.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   $ rosrun my_project pose_subscriber.py 
+    terminal 5. สั่ง $ rosrun turtlesim turtle_teleop_key
+
     
     
+ 
     
     
 
