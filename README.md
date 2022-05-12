@@ -80,19 +80,15 @@
  12. ทดลองสร้างโค้ด Subcribe ข้อมูลจาก turtlesim ให้เปิด 5 terminal
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
-    terminal 3. สั่ง $ rostopic list
-                   $ rostopic info /turtle1/pose
-                   $ rostopic echo /turtle1/pose
-    terminal 4. สั่ง $ cd catkin_ws/src/my_project/scripts
-                   $ touch pose_subscriber.py
-                   $ chmod +x pose_subscriber.py
+    terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
+                   $ touch turtle_controller.py
+                   $ chmod +x turtle_controller.py
                    $ cd ../..
                    $ code . แล้วเขียนโค้ด
-                   $ rosrun my_project pose_subscriber.py 
-    terminal 5. สั่ง $ rosrun turtlesim turtle_teleop_key
+                   $ rosrun my_project turtle_controller.py 
 
     
-    
+ 
  
     
     
