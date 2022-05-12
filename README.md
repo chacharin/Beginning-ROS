@@ -8,6 +8,10 @@
   เปิด Terminal แล้วพิมพ์ทีละบรรทัด http://wiki.ros.org/noetic/Installation/Ubuntu
     (หาก EROR <bash: /opt/ros/noetic/setup.bash: No such file or directory> 
       ให้ใช้คำสั่ง gedit $HOME/.bashrc แล้วลบ /opt/ros/noetic/setup.bash ท้ายไฟล์)
+      เพิ่มเติม
+     $ sudo apt install ros-noetic-rosserial-arduino
+     $ pyhton3 --version
+     $ sudo apt install python3-pip
  
 4. ติดตั้ง Enviroment
     $ mkdir catkin_ws
@@ -20,7 +24,7 @@
   
 5. สร้าง Packgage เก็บ Code ของตัวเอง
     $ cd catkin_ws/src
-    $ catkin_create_pkg my_project rospy turtlesim
+    $ catkin_create_pkg my_project rospy turtlesim rosserial_arduino
     $ sudo snap install code --classic
     $ catkin_make (การ make  ต้องทำใน path catkin_ws หลัก )
     
