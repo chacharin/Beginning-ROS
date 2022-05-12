@@ -142,3 +142,6 @@
 17. กิจกรรมสร้างซอฟท์แวร์เพื่อควบคุมการเปิดปิด LED บนบอร์ด Arduino
   -เขียนโค้ด LED_Subscriber ผ่าน Arduino IDE แล้ว Burn Code
   -สร้างไฟล์ GUI_Publisher ใน VS Code แล้วสั่งรันด้วย rosrun my_project GUI_Publisher.py
+  -เริ่มการติดต่อสื่อสารด้วยคำสั่ง rosrun rosserial_python serial_node.py /dev/ttyUSB0
+
+
