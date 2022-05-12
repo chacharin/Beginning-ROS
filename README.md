@@ -51,55 +51,55 @@
     - terminal 3. สั่ง $ rosrun turtlesim draw_square
     - terminal 4. สั่ง $ rqt_graph
     - ตรวจสอบ topic ด้วยคำสั่งต่างๆ ดังต่อไปนี้ 
-                   - $ rostopic list
-                   - $ rostopic info /turtle1/pose
-                   - $ rosmsg show turtle1/pose (จะพบชุดตัวแปรข้อมูล)
-                   - $ rostopic echo /turtle1/pose
+                   $ rostopic list
+                   $ rostopic info /turtle1/pose
+                   $ rosmsg show turtle1/pose (จะพบชุดตัวแปรข้อมูล)
+                   $ rostopic echo /turtle1/pose
     
 9. ทดลองสร้างโค้ด Pubish คำสั่ง ไปที่ turtlesim ให้เปิด 4 terminal
     - terminal 1. สั่ง $ roscore 
     - terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     - terminal 3. สั่ง $ rostopic list
-                   - $ rostopic info /cmd_vel
-                   - $ rosmsg show geometry_msgs/Twist (จะพบชุดตัวแปรข้อมูล)
+                   $ rostopic info /cmd_vel
+                   $ rosmsg show geometry_msgs/Twist (จะพบชุดตัวแปรข้อมูล)
     - terminal 4. สั่ง $ cd catkin_ws/src/my_project/scripts
-                   - $ touch draw_circle.py
-                   - $ chmod +x draw_circle.py
-                   - $ cd ../..
-                   - $ code . แล้วเขียนโค้ด
-                   - (ต้องเปิดไฟล์ packgage.xml แล้วเติม geometry_msgs ใน depend tag 3 อัน)
-                   - $ rosrun my_project draw_circle.py
+                   $ touch draw_circle.py
+                   $ chmod +x draw_circle.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   (ต้องเปิดไฟล์ packgage.xml แล้วเติม geometry_msgs ใน depend tag 3 อัน)
+                   $ rosrun my_project draw_circle.py
   
  10. ทดลองสร้างโค้ด Subcribe ข้อมูลจาก turtlesim ให้เปิด 5 terminal
     - terminal 1. สั่ง $ roscore 
     - terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     - terminal 3. สั่ง $ rostopic list
-                   - $ rostopic info /turtle1/pose
-                   - $ rostopic echo /turtle1/pose
+                   $ rostopic info /turtle1/pose
+                   $ rostopic echo /turtle1/pose
     - terminal 4. สั่ง $ cd catkin_ws/src/my_project/scripts
-                   - $ touch pose_subscriber.py
-                   - $ chmod +x pose_subscriber.py
-                   - $ cd ../..
-                   - $ code . แล้วเขียนโค้ด
-                   - $ rosrun my_project pose_subscriber.py
+                   $ touch pose_subscriber.py
+                   $ chmod +x pose_subscriber.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   $ rosrun my_project pose_subscriber.py
  
  11. ทดลองสร้างโค้ดผสม Pubish และ Subcribe เพื่อควบคุม turtlesim 
     - terminal 1. สั่ง $ roscore 
     - terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     - terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
-                   - $ touch turtle_controller.py
-                   - $ chmod +x turtle_controller.py
-                   - $ cd ../..
-                   - $ code . แล้วเขียนโค้ด
-                   - $ rosrun my_project turtle_controller.py 
+                   $ touch turtle_controller.py
+                   $ chmod +x turtle_controller.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   $ rosrun my_project turtle_controller.py 
 
 12. ทดลองใช้ ROS service เพื่อควบคุม turtlesim 
     - terminal 1. สั่ง $ roscore 
     - terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     - terminal 3. สั่ง $ rosservice list
-                   - $ rosservice info /turtle1/set_pen
-                   - $ rossrv show turtlesim/SetPen
-                   - $ rosservice call /turtle1/set_pen "{'r': 200, 'g': 0, 'b': 0, 'width': 4, 'off': 0}"
+                   $ rosservice info /turtle1/set_pen
+                   $ rossrv show turtlesim/SetPen
+                   $ rosservice call /turtle1/set_pen "{'r': 200, 'g': 0, 'b': 0, 'width': 4, 'off': 0}"
                    
     - terminal 4. สั่ง $ rosrun turtlesim turtle_teleop_key
 
@@ -107,11 +107,11 @@
     - terminal 1. สั่ง $ roscore 
     - terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     - terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
-                   - $ touch mix_pub_sub_service.py
-                   - $ chmod +x mix_pub_sub_service.py
-                   - $ cd ../..
-                   - $ code . แล้วเขียนโค้ด
-                   - $ rosrun my_project mix_pub_sub_service.py    
+                   $ touch mix_pub_sub_service.py
+                   $ chmod +x mix_pub_sub_service.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   $ rosrun my_project mix_pub_sub_service.py    
 14. ขั้นตอนการติดตั้ง Arduino IDE บน Ubuntu
   - $sudo apt-get update 
   - $ sudo apt-get upgrade 
@@ -151,4 +151,4 @@
 
 19. กิจกรรมสร้างระบบตรวจจับบหน้ามนุษย์
   - ติดตั้ง opencv ด้วยคำสั่ง $ pip install opencv-python==3.4.17.63
-  - คัดลองไฟล์ XML model ลงใน Path
+  - คัดลอกไฟล์ XML model ลงใน Path
