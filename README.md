@@ -111,4 +111,34 @@
                    $ chmod +x mix_pub_sub_service.py
                    $ cd ../..
                    $ code . แล้วเขียนโค้ด
-                   $ rosrun my_project mix_pub_sub_service.py               
+                   $ rosrun my_project mix_pub_sub_service.py    
+14. ขั้นตอนการติดตั้ง Arduino IDE บน Ubuntu
+  $sudo apt-get update 
+  $ sudo apt-get upgrade 
+  $ mkdir arduino 
+  $ cd arduino/ 
+  $ wget https://downloads.arduino.cc/arduino-1.8.15-linux64.tar.xz 
+  $ tar -xvf ./arduino-1.8.15-linux64.tar.xz 
+  $ cd arduino-1.8.15/ 
+  $ sudo ./install.sh
+
+15. ขั้นตอนการติดตั้ง CH340 บน Ubuntu 
+  $ mkdir CH340_Source 
+  $ cd CH340_Source 
+  $ git clone https://github.com/juliagoda/CH341SER.git 
+  $ cd CH341SER 
+  $ make clean 
+  $ make 
+  $ sudo make load 
+  $ sudo rmmod ch341 (เพื่อขจัดไดร์ฟเวอร์เก่า อาจเกิด Error หากไม่พบไดร์ฟเวอร์เก่า) 
+  $ lsmod | grep ch34 (แสดงไดร์ฟเวอร์ที่ถูกติดตั้งใหม่แล้ว) 
+  $ dmesg (ทดสอบการ detect ด้วยการ ถอดสาย และ เสียสาย )
+
+16.ขั้นตอนการติดตั้ง ROS Library ใน Arduno IDE 
+  -เปิด Arduino IDE 
+  -เข้าแถบ Sketch >>> Include Library >>> Manage Libraries 
+  -ค้นหาคำว่า rosserial >>> เลือก version 0.7.9 >>> กด Install
+  
+17. กิจกรรมสร้างซอฟท์แวร์เพื่อควบคุมการเปิดปิด LED บนบอร์ด Arduino
+  -เขียนโค้ด LED_Subscriber ผ่าน Arduino IDE แล้ว Burn Code
+  -สร้างไฟล์ GUI_Publisher ใน VS Code แล้วสั่งรันด้วย rosrun my_project GUI_Publisher.py
