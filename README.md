@@ -76,8 +76,21 @@
                    $ code . แล้วเขียนโค้ด
                    (ต้องเปิดไฟล์ packgage.xml แล้วเติม geometry_msgs ใน depend tag 3 อัน)
                    $ rosrun my_project draw_circle.py
-    
+  
  12. ทดลองสร้างโค้ด Subcribe ข้อมูลจาก turtlesim ให้เปิด 5 terminal
+    terminal 1. สั่ง $ roscore 
+    terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
+    terminal 3. สั่ง $ rostopic list
+                   $ rostopic info /turtle1/pose
+                   $ rostopic echo /turtle1/pose
+    terminal 4. สั่ง $ cd catkin_ws/src/my_project/scripts
+                   $ touch pose_subscriber.py
+                   $ chmod +x pose_subscriber.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   $ rosrun my_project pose_subscriber.py
+ 
+ 12. ทดลองสร้างโค้ดผสม Pubish และ Subcribe เพื่อควบคุม turtlesim 
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
