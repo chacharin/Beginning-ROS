@@ -90,7 +90,7 @@
                    $ code . แล้วเขียนโค้ด
                    $ rosrun my_project pose_subscriber.py
  
- 12. ทดลองสร้างโค้ดผสม Pubish และ Subcribe เพื่อควบคุม turtlesim 
+ 13. ทดลองสร้างโค้ดผสม Pubish และ Subcribe เพื่อควบคุม turtlesim 
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
