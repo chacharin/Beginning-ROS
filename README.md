@@ -123,11 +123,3 @@
                    $ cd ../..
                    $ code . แล้วเขียนโค้ด
                    $ rosrun my_project mix_pub_sub_service.py               
-                    
-                  
- 
- 
-    
-    
-
-   
