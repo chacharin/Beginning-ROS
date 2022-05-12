@@ -35,11 +35,36 @@
     $ code .
     จากนั้นเขียนโค้ดใน VS code
     
-8. ทดสอบเรียกใช้ไฟล์ Node ที่สร้างขึ้น ให้เปิด 3 terinal 
-    terminal 1. สั่ง $ rosrun ด้วย new terminal 
-    terminal2.  สั่ง $ rosrun my_project one.py
-    terminal3.  สั่ง $ rosnode list (  และทดสอบ $ rosnode kill /node_one)
+8. ทดสอบเรียกใช้ไฟล์ Node ที่สร้างขึ้น ให้เปิด 3 terminal 
+    terminal 1. สั่ง $ roscore
+    terminal 2. สั่ง $ rosrun my_project one.py
+    terminal 3. สั่ง $ rosnode list (  และทดสอบ $ rosnode kill /node_one)
     #ใช้ $ rqt_graph ดู Model Node Link
+
+9.  ทำความเข้าใจการทำงานของ Node ให้เปิด 4 terminal 
+    terminal 1. สั่ง $ roscore
+    terminal 2. สั่ง $ rosrun rospy_tutorial talker
+    terminal 3. สั่ง $ rosrun rospy_tutorial listener
+    terminal 4. สั่ง $ rqt_graph
+    ตรวจสอบ topic ด้วยคำสั่งต่างๆ ดังต่อไปนี้ 
+                   $ rostopic list
+                   $ rostopic info /chatter
+                   $ rosmsg show std_mgs/String
+                   $ rostopic echo/chatter
+                   
+10. ทดลองใช้ turtlesim เพื่อเรียนรู้การรับส่งข้อมูลระหว่าง Node ให้เปิด 4 terminal
+    terminal 1. สั่ง $ roscore 
+    terminal 2. สั่ง $ rosrun turtlesim turtlesim_node
+    terminal 3. สั่ง $ rosrun turtlesim draw_square
+    terminal 4. สั่ง $ rqt_graph
+    ตรวจสอบ topic ด้วยคำสั่งต่างๆ ดังต่อไปนี้ 
+                   $ rostopic list
+                   $ rostopic info /turtle1/pose
+                   $ rosmsg show turtle1/pose (จะพบชุดตัวแปรข้อมูล)
+                   $ rostopic echo /turtle1/pose
+    
+    
+    
     
     
 
