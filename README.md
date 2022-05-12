@@ -100,7 +100,27 @@
                    $ code . แล้วเขียนโค้ด
                    $ rosrun my_project turtle_controller.py 
 
-    
+13. ทดลองใช้ ROS service เพื่อควบคุม turtlesim 
+    terminal 1. สั่ง $ roscore 
+    terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
+    terminal 3. สั่ง $ rosservice list
+                   $ rosservice info /turtle1/set_pen
+                   $ rossrv show turtlesim/SetPen
+                   $ rosservice call /turtle1/set_pen "{'r': 200, 'g': 0, 'b': 0, 'width': 4, 'off': 0}"
+                   
+    terminal 4. สั่ง $ rosrun turtlesim turtle_teleop_key
+
+14. ทดลองสร้างโค้ดผสม Pubish Subcribe และ Service เพื่อควบคุม turtlesim 
+    terminal 1. สั่ง $ roscore 
+    terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
+    terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
+                   $ touch mix_pub_sub_service.py
+                   $ chmod +x mix_pub_sub_service.py
+                   $ cd ../..
+                   $ code . แล้วเขียนโค้ด
+                   $ rosrun my_project mix_pub_sub_service.py               
+                    
+                  
  
  
     
