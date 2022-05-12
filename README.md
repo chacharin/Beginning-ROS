@@ -148,3 +148,6 @@
   -เขียนโค้ด Servo_Subscriber ผ่าน Arduino IDE แล้ว Burn Code
   -สร้างไฟล์ Scale_Publisher ใน VS Code แล้วสั่งรันด้วย rosrun my_project Scale_Publisher.py
   -เริ่มการติดต่อสื่อสารด้วยคำสั่ง rosrun rosserial_python serial_node.py /dev/ttyUSB0
+
+19. กิจกรรมสร้างระบบตรวจจับบหน้ามนุษย์
+  - ติดตั้ง opencv ด้วยคำสั่ง $ pip install opencv-python==3.4.17.63
