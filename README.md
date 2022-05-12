@@ -28,7 +28,7 @@
     $ sudo snap install code --classic
     $ catkin_make (การ make  ต้องทำใน path catkin_ws หลัก )
     
-7. สร้าง Node ด้วย python ใน ROS
+6. สร้าง Node ด้วย python ใน ROS
     $ cd catkin_ws/src/my_project
     $ mkdir scripts
     $ cd scripts
@@ -39,24 +39,13 @@
     $ code .
     จากนั้นเขียนโค้ดใน VS code
     
-8. ทดสอบเรียกใช้ไฟล์ Node ที่สร้างขึ้น ให้เปิด 3 terminal 
+7. ทดสอบเรียกใช้ไฟล์ Node ที่สร้างขึ้น ให้เปิด 3 terminal 
     terminal 1. สั่ง $ roscore
     terminal 2. สั่ง $ rosrun my_project one.py
     terminal 3. สั่ง $ rosnode list (  และทดสอบ $ rosnode kill /node_one)
     #ใช้ $ rqt_graph ดู Model Node Link
 
-9.  ทำความเข้าใจการทำงานของ Node ให้เปิด 4 terminal 
-    terminal 1. สั่ง $ roscore
-    terminal 2. สั่ง $ rosrun rospy_tutorial talker
-    terminal 3. สั่ง $ rosrun rospy_tutorial listener
-    terminal 4. สั่ง $ rqt_graph
-    ตรวจสอบ topic ด้วยคำสั่งต่างๆ ดังต่อไปนี้ 
-                   $ rostopic list
-                   $ rostopic info /chatter
-                   $ rosmsg show std_mgs/String
-                   $ rostopic echo/chatter
-                   
-10. ทดลองใช้ turtlesim เพื่อเรียนรู้การรับส่งข้อมูลระหว่าง Node ให้เปิด 4 terminal
+8. ทดลองใช้ turtlesim เพื่อเรียนรู้การรับส่งข้อมูลระหว่าง Node ให้เปิด 4 terminal
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node
     terminal 3. สั่ง $ rosrun turtlesim draw_square
@@ -67,7 +56,7 @@
                    $ rosmsg show turtle1/pose (จะพบชุดตัวแปรข้อมูล)
                    $ rostopic echo /turtle1/pose
     
-11. ทดลองสร้างโค้ด Pubish คำสั่ง ไปที่ turtlesim ให้เปิด 4 terminal
+9. ทดลองสร้างโค้ด Pubish คำสั่ง ไปที่ turtlesim ให้เปิด 4 terminal
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     terminal 3. สั่ง $ rostopic list
@@ -81,7 +70,7 @@
                    (ต้องเปิดไฟล์ packgage.xml แล้วเติม geometry_msgs ใน depend tag 3 อัน)
                    $ rosrun my_project draw_circle.py
   
- 12. ทดลองสร้างโค้ด Subcribe ข้อมูลจาก turtlesim ให้เปิด 5 terminal
+ 10. ทดลองสร้างโค้ด Subcribe ข้อมูลจาก turtlesim ให้เปิด 5 terminal
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     terminal 3. สั่ง $ rostopic list
@@ -94,7 +83,7 @@
                    $ code . แล้วเขียนโค้ด
                    $ rosrun my_project pose_subscriber.py
  
- 13. ทดลองสร้างโค้ดผสม Pubish และ Subcribe เพื่อควบคุม turtlesim 
+ 11. ทดลองสร้างโค้ดผสม Pubish และ Subcribe เพื่อควบคุม turtlesim 
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
@@ -104,7 +93,7 @@
                    $ code . แล้วเขียนโค้ด
                    $ rosrun my_project turtle_controller.py 
 
-13. ทดลองใช้ ROS service เพื่อควบคุม turtlesim 
+12. ทดลองใช้ ROS service เพื่อควบคุม turtlesim 
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     terminal 3. สั่ง $ rosservice list
@@ -114,7 +103,7 @@
                    
     terminal 4. สั่ง $ rosrun turtlesim turtle_teleop_key
 
-14. ทดลองสร้างโค้ดผสม Pubish Subcribe และ Service เพื่อควบคุม turtlesim 
+13. ทดลองสร้างโค้ดผสม Pubish Subcribe และ Service เพื่อควบคุม turtlesim 
     terminal 1. สั่ง $ roscore 
     terminal 2. สั่ง $ rosrun turtlesim turtlesim_node 
     terminal 3. สั่ง $ cd catkin_ws/src/my_project/scripts
