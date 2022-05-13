@@ -10,7 +10,7 @@
 - ให้ใช้คำสั่ง gedit $HOME/.bashrc แล้วลบ /opt/ros/noetic/setup.bash ท้ายไฟล์)
 - เพิ่มเติม
      - $ sudo apt install ros-noetic-rosserial-arduino
-     - $ pyhton3 --version
+     - $ python3 --version
      - $ sudo apt install python3-pip
  
 4. ติดตั้ง Enviroment
