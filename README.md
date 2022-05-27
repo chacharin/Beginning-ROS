@@ -1,6 +1,6 @@
 # ROS-Setup
 
-1. ติดตั้ง VMWare https://mailkmuttacth-my.sharepoint.com/:u:/g/personal/chacharin_lert_mail_kmutt_ac_th/EcJriInTdyVFhVROKO1TxxQBV7-VeZu-QNP1XYH_nTq60g?e=ZMe1Qd
+1. ติดตั้ง VMWare https://download3.vmware.com/software/WKST-PLAYER-1623-New/VMware-player-full-16.2.3-19376536.exe?ext=.exe&params=%7B%22sourcefilesize%22%3A%22584.21+MB%22%2C%22dlgcode%22%3A%22e27665f745618fd1c0e2388c63d9c2de%22%2C%22languagecode%22%3A%22en%22%2C%22source%22%3A%22DOWNLOADS%22%2C%22downloadtype%22%3A%22manual%22%2C%22downloaduuid%22%3A%22e53ad8c5-0a9a-428d-8fad-9700884546fa%22%2C%22dlgtype%22%3A%22Product+Binaries%22%2C%22productversion%22%3A%2216.2.3%22%2C%22productfamily%22%3A%22VMware+Workstation+Player%22%7D
 
 2. ติดตั้ง Ubuntu https://releases.ubuntu.com/20.04.4/ubuntu-20.04.4-desktop-amd64.iso
 
