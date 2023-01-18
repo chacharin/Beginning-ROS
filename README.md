@@ -150,3 +150,18 @@
 19. กิจกรรมสร้างระบบตรวจจับบหน้ามนุษย์
   - ติดตั้ง opencv ด้วยคำสั่ง $ pip install opencv-python==3.4.17.63
   - คัดลอกไฟล์ XML model ลงใน Path
+
+rosservice list 
+rosservice call /reset
+rosservice call /clear
+
+rosservice info /turtle1/set_pen 
+rosservice call /turtle1/set_pen 255 0 0 5 0
+
+rosservice info /spawn
+rosservice call /spawn 5 3 1.57 "turtleX"
+
+rosparam list
+rosparam get /turtlesim
+rosparam set /turtlesim/background_r 150
+rosservice call /clear
