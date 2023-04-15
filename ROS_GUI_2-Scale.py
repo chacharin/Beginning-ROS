@@ -11,8 +11,8 @@ S2_value = 0
 
 
 rospy.init_node('GUI')
-pub1 = rospy.Publisher('servo_1', Int16, queue_size=10)
-pub2 = rospy.Publisher('servo_2', Int16, queue_size=10)
+pub1 = rospy.Publisher('Topic_servo_9', Int16, queue_size=10)
+pub2 = rospy.Publisher('Topic_servo_10', Int16, queue_size=10)
 rate = rospy.Rate(100)
 rate.sleep()
 
