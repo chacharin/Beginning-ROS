@@ -29,11 +29,11 @@ def talker(val):
     pub1.publish(S1_value)
     pub2.publish(S2_value)
 
-S1= Scale(frame,from_=0,to=180,command=talker)
+S1= Scale(frame, from_=0, to=180, lable= "SV-9", command=talker)
 S1.place(x=10, y=10)
 S1.set(90)
 
-S2= Scale(frame,from_=0,to=180,command=talker)
+S2= Scale(frame, from_=0, to=180, lable= "SV-10", command=talker)
 S2.place(x=70, y=10)
 S2.set(90)
 
