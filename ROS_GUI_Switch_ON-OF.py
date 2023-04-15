@@ -6,7 +6,7 @@ from std_msgs.msg import Int16
 frame=Tk()
 frame.geometry("200x200")
 
-rospy.init_node('GUI_LED_Control', anonymous=True)
+rospy.init_node('GUI_LED_Control')
 rate = rospy.Rate(10) 
 rate.sleep()
 pub1 = rospy.Publisher('Topic_LED_13', Int16, queue_size=10)
