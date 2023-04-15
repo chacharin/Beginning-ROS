@@ -28,8 +28,6 @@ def talker(val):
     
     pub1.publish(S1_value)
     pub2.publish(S2_value)
-    pub3.publish(S3_value)
-    
 
 S1= Scale(frame,from_=0,to=180,command=talker)
 S1.place(x=10, y=10)
