@@ -12,9 +12,10 @@ void setup()
    nh.advertise(pub);
 }
  
-void loop() {
+void loop() 
+{
     sensorData.data = digitalRead(3);
     pub.publish(&sensorData);
-    delay(1);
     nh.spinOnce();
+    delay(500);
 }
