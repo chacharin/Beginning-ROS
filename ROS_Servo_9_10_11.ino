@@ -8,24 +8,24 @@ Servo servo_1;
 Servo servo_2;
 Servo servo_3;
  
-void servo_cb_1( const std_msgs::Int16& cmd_msg)
+void s_1( const std_msgs::Int16& cmd_msg)
 {
   servo_1.write(cmd_msg.data); 
 }
  
-void servo_cb_2( const std_msgs::Int16& cmd_msg)
+void s_2( const std_msgs::Int16& cmd_msg)
 }
   servo_2.write(cmd_msg.data); 
 }
  
-void servo_cb_3( const std_msgs::Int16& cmd_msg)
+void s_3( const std_msgs::Int16& cmd_msg)
 {
   servo_3.write(cmd_msg.data); 
 }
 
-ros::Subscriber<std_msgs::Int16> sub_1("servo_1", servo_cb_1);
-ros::Subscriber<std_msgs::Int16> sub_2("servo_2", servo_cb_2);
-ros::Subscriber<std_msgs::Int16> sub_3("servo_3", servo_cb_3);
+ros::Subscriber<std_msgs::Int16> sub_1("servo_1", s_1);
+ros::Subscriber<std_msgs::Int16> sub_2("servo_2", s_2);
+ros::Subscriber<std_msgs::Int16> sub_3("servo_3", s_3);
  
 void setup(){
   pinMode(9, OUTPUT);
