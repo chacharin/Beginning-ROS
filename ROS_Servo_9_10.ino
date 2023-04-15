@@ -10,12 +10,12 @@ Servo servo_10;
  
 void s_9( const std_msgs::Int16& cmd_msg)
 {
-  servo_1.write(cmd_msg.data); 
+  servo_9.write(cmd_msg.data); 
 }
  
 void s_10( const std_msgs::Int16& cmd_msg)
 }
-  servo_2.write(cmd_msg.data); 
+  servo_10.write(cmd_msg.data); 
 }
  
 ros::Subscriber<std_msgs::Int16> sub_1("Topic_servo_9", s_9);
