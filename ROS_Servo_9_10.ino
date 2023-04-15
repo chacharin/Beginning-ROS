@@ -14,7 +14,7 @@ void s_9( const std_msgs::Int16& cmd_msg)
 }
  
 void s_10( const std_msgs::Int16& cmd_msg)
-}
+{
   servo_10.write(cmd_msg.data); 
 }
  
