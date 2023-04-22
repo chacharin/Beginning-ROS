@@ -1,0 +1,7 @@
+<launch>
+	<arg name="text" default="hi" />
+	<node name="Talker" pkg="my_project" type="nodeA.py" output="screen"> 
+		<param name="text" value="$(arg text)" />
+	</node>
+	<node name="Listener" pkg="my_project" type="nodeB.py" output="screen"> </node>	
+</launch>
