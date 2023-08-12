@@ -5,6 +5,8 @@ from std_msgs.msg import Int16
 
 frame=Tk()
 frame.geometry("200x200")
+L1= Label(frame,font=('Arial',40), text = "0")
+L1.pack()
 
 rospy.init_node('GUI')
 rate = rospy.Rate(10) 
@@ -15,8 +17,5 @@ def read(num):
     L1.config(text=str(sensor_read))
 
 sub = rospy.Subscriber('Topic_Sensor', Int16, callback= read)
-    
-L1= Label(frame,font=('Arial',40), text = "0")
-L1.pack()
 
 frame.mainloop()
