@@ -17,5 +17,5 @@ void loop()
     sensorData.data = digitalRead(3);
     pub.publish(&sensorData);
     nh.spinOnce();
-    delay(500);
+    delay(10);
 }
