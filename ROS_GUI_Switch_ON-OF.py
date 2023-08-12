@@ -11,9 +11,6 @@ rate = rospy.Rate(10)
 rate.sleep()
 pub1 = rospy.Publisher('Topic_LED_13', Int16, queue_size=10)
    
-def publish():
-    talker()
-
 def talker(val):
     cmd_value = Int16(val)
     rospy.loginfo(cmd_value)
