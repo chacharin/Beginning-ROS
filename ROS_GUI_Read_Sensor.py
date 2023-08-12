@@ -12,7 +12,6 @@ rate.sleep()
 
 def read(num):
     sensor_read = num.data
-    rospy.loginfo(str(sensor_read))
     L1.config(text=str(sensor_read))
 
 sub = rospy.Subscriber('Topic_Sensor', Int16, callback= read)
