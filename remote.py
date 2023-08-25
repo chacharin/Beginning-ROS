@@ -3,12 +3,15 @@ from tkinter import*
 import rospy
 from geometry_msgs.msg import Twist
 
+
 frame = Tk()
 frame.title("REMOTE")
 frame.geometry("200x200")
 
+
 rospy.init_node("GUI_Remote")
 pub = rospy.Publisher("turtle1/cmd_vel",Twist, queue_size=10)
+
 
 def fw():
     print("fw")
@@ -50,7 +53,5 @@ B3.place(x=20, y=80)
 
 B4 = Button(text = "RT", command=rt)
 B4.place(x=128, y=80)
-
-
 
 frame.mainloop()
