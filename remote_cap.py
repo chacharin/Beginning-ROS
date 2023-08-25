@@ -13,7 +13,6 @@ pub = rospy.Publisher("/take", String, queue_size=10)
 def cap():
     pub.publish("cap")
 
-
 B1 = Button(text = "Capture", command=cap)
 B1.pack()
 
