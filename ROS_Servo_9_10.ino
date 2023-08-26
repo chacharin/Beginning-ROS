@@ -7,7 +7,6 @@ ros::NodeHandle  nh;
 Servo servo_9;
 Servo servo_10;
 
- 
 void s_9( const std_msgs::Int16& cmd_msg)
 {
   servo_9.write(cmd_msg.data); 
@@ -21,12 +20,10 @@ void s_10( const std_msgs::Int16& cmd_msg)
 ros::Subscriber<std_msgs::Int16> sub_1("Topic_servo_9", s_9);
 ros::Subscriber<std_msgs::Int16> sub_2("Topic_servo_10", s_10);
 
- 
 void setup()
 {
   servo_9.attach(9); 
   servo_10.attach(10); 
- 
   nh.initNode();
   nh.subscribe(sub_1);
   nh.subscribe(sub_2);
