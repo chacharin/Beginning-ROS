@@ -16,7 +16,6 @@ void setup()
   pinMode(13, OUTPUT);
   nh.initNode();
   nh.subscribe(sub);
-
 }
  
 void loop()
