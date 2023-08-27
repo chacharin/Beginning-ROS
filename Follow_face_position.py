@@ -26,7 +26,6 @@ def callback(data):
                     right_pan = servo9_postion - 1
                     pub_servo_9.publish(right_pan)
                     servo9_postion = right_pan
-
             if y<= 150:
                 if servo10_postion <= 120:
                     lift_up = servo10_postion + 1
@@ -37,8 +36,7 @@ def callback(data):
                     lift_down = servo10_postion - 1
                     pub_servo_10.publish(lift_down)
                     servo10_postion = lift_down
-            
-
+                    
 rospy.init_node('control_follow_face')
     
 pub_servo_9 = rospy.Publisher("/Topic_servo_9", Int16, queue_size=10)
@@ -48,6 +46,4 @@ pub_servo_10.publish(90)
 rospy.loginfo("set-motor")
 
 rospy.Subscriber("/face_detection/faces", FaceArrayStamped, callback)
-rospy.spin()
-
-    
+rospy.spin()  
