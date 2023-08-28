@@ -6,7 +6,7 @@
 		<param name="text" value="$(arg text)" />
 	</node>
 
-	<node name="Listener" pkg="my_project" type="nodeB.py" output="screen">
+	<node name="Listener" pkg="my_project" type="nodeB_arg.py" output="screen">
 	</node>	
 
 </launch>
