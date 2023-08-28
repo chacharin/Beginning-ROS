@@ -2,7 +2,7 @@
 
 	<arg name="text" default="hi" />
 
-	<node name="Talker" pkg="my_project" type="nodeA.py" output="screen"> 
+	<node name="Talker" pkg="my_project" type="nodeA_arg.py.py" output="screen"> 
 		<param name="text" value="$(arg text)" />
 	</node>
 
