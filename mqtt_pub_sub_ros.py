@@ -40,4 +40,4 @@ mqttc.loop_start()
 rospy.spin()
 
 mqttc.loop_stop()
-mqtt.disconnect()
+mqttc.disconnect()
