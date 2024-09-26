@@ -1,5 +1,5 @@
 
-*Beginning ROS in Practices*
+***Beginning ROS in Practices***
 
 Welcome to the Beginning ROS in Practices repository! This repository contains all the files and resources for the lessons in the course Beginning ROS in Practices. The course provides a practical introduction to the Robot Operating System (ROS), guiding you through installation, basic concepts, and hands-on projects using Python and Arduino.
 
