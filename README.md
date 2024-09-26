@@ -1,1 +1,87 @@
+#Beginning ROS in Practices
+Welcome to the Beginning ROS in Practices repository! This repository contains all the files and resources for the lessons in the course Beginning ROS in Practices. This course provides a practical introduction to the Robot Operating System (ROS), guiding you through installation, basic concepts, and hands-on projects using Python and Arduino.
 
+##Table of Contents
+-Introduction
+-Installation of VirtualBox and Ubuntu
+-Installation of ROS Noetic Ninjemys
+-Creating a Workspace
+-Creating a Package for Python in ROS
+-Creating a Package
+-Experimenting with Python Files
+-Executing Python Files with ROS
+-Downloading Files from GitHub
+-Experimenting with ROS
+-Nodes and Topics
+-Listing Nodes in ROS
+-Listing Topics in ROS
+-Displaying Topic Details
+-Viewing Topic Data Transmission
+-Publishing Data to a Topic
+-Services and Parameters
+-Listing Services Running in the System
+-Calling Services in the System
+-Displaying Service Details
+-Listing Parameters Running in the System
+-Displaying Parameter Values
+-Setting Parameter Values
+-Creating a Publisher Node with Python
+-Script Details: node1.py
+-Script Explanation: node1.py
+-Creating a Subscriber Node with Python
+-Script Details: node2.py
+-Script Explanation: node2.py
+-Creating a Node to Control an Autonomous Robot
+-Input Section
+-Processing Section
+-Output Section
+-Script Details: pub-sub.py
+-Script Explanation: pub-sub.py
+-Creating a GUI to Control a Robot
+-Script Details: remote.py
+-Script Explanation: remote.py
+-Connecting a Webcam with VirtualBox
+-Capturing Images from a Webcam
+-Installing and Using usb_cam Package
+-Script Details: cap_cam.py
+-Script Explanation: cap_cam.py
+-Script Details: remote_cap.py
+-Script Explanation: remote_cap.py
+-Using Arduino with ROS
+-Connecting Arduino to VirtualBox
+-Installing Arduino IDE on Ubuntu
+-Controlling Arduino Digital Pins with ROS
+-Script Details: ROS_LED_13_control.ino
+-Script Explanation: ROS_LED_13_control.ino
+-Connecting Arduino with ROS
+-Script Details: ROS_GUI_Switch_ON-OF.py
+-Script Explanation: ROS_GUI_Switch_ON-OF.py
+-Controlling Micro Servo Motors with ROS via Arduino
+-Script Details: ROS_Servo_9_10.ino
+-Script Explanation: ROS_Servo_9_10.ino
+-Connecting Arduino with ROS
+-Script Details: ROS_GUI_2-Scale.py
+-Script Explanation: ROS_GUI_2-Scale.py
+-Reading Digital Sensors on Arduino with ROS
+-Script Details: ROS_Read_Sensor.ino
+-Script Explanation: ROS_Read_Sensor.ino
+-Connecting Arduino with ROS
+-Script Details: ROS_GUI_Read_Sensor.py
+-Script Explanation: ROS_GUI_Read_Sensor.py
+-Using opencv_apps
+-Installing opencv_apps Package
+-Experimenting with opencv_apps
+-Webcam Face Tracking Project
+-Hardware Components
+-Device Limitations
+-Software Components
+-Script Details: Follow_face_position.py
+-Script Explanation: Follow_face_position.py
+-Creating Launch Files
+-Components of a Launch File
+--Example with Python Programs
+--Script Details: NodeAB_arg.launch
+--Script Explanation: NodeAB_arg.launch
+--Script Details: nodeA_arg.py
+--Script Details: nodeB_arg.py
+--Using the Launch File
